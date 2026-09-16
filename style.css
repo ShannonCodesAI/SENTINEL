@@ -1,0 +1,121 @@
+/* Preserve component and responsive rule order in one stylesheet entry. */
+@import './src/ui/styles/foundation.css';
+@import './src/ui/styles/controls.css';
+@import './src/ui/styles/location.css';
+@import './src/ui/styles/status.css';
+@import './src/ui/styles/cockpit.css';
+@import './src/ui/styles/overlays.css';
+@import './src/ui/styles/layers.css';
+@import './src/ui/styles/radio.css';
+@import './src/ui/styles/cctv.css';
+@import './src/ui/styles/scenes.css';
+@import './src/ui/styles/bhote-koshi.css';
+@import './src/ui/styles/recording.css';
+@import './src/ui/styles/responsive.css';
+@import './src/ui/styles/command-dock.css';
+@import './src/ui/styles/command-dock-compact.css';
+@import './src/ui/styles/command-dock-trays.css';
+@import './src/ui/styles/command-dock-sliding.css';
+@import './src/ui/styles/voice-cost.css';
+@import './src/ui/styles/first-run.css';
+@import './src/ui/styles/provider-settings.css';
+/* ============================================================================
+ * SENTINEL THEME OVERRIDE — amber/dark OSINT aesthetic
+ * ========================================================================== */
+:root {
+  --bg-dark: #0a0b0e !important;
+  --glass-bg: rgba(12, 10, 6, 0.78) !important;
+  --glass-border: rgba(255, 176, 0, 0.22) !important;
+  --accent: #ffb000 !important;
+  --accent-dim: rgba(255, 176, 0, 0.18) !important;
+  --accent-glow: rgba(255, 176, 0, 0.55) !important;
+  --text-primary: #fef3c7 !important;
+  --text-secondary: rgba(254, 243, 199, 0.55) !important;
+  --text-dim: rgba(254, 243, 199, 0.32) !important;
+  --cockpit-accent: #ffb000 !important;
+  --hud-color: rgba(255, 176, 0, 0.65) !important;
+  --hud-glow: rgba(255, 176, 0, 0.45) !important;
+  --hud-border: rgba(255, 176, 0, 0.18) !important;
+}
+body::before {
+  content: ""; position: fixed; inset: 0;
+  background-image: linear-gradient(rgba(255, 176, 0, 0.025) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 176, 0, 0.025) 1px, transparent 1px);
+  background-size: 32px 32px; pointer-events: none; z-index: 1;
+}
+#title-bar h1, #title-bar h1 span, #title-bar h1 *,
+.brand-logo, .title-accent, #title-bar .subtitle {
+  color: #fcd34d !important;
+  text-shadow: 0 0 8px rgba(255, 176, 0, 0.55) !important;
+  background: transparent !important;
+}
+#title-bar [style*="color: white" i], #title-bar [style*="color:white" i],
+#title-bar [class*="white"] { color: #fcd34d !important; }
+[style*="color: #00d4ff" i], [style*="color:#00d4ff" i],
+[style*="color: cyan" i], [style*="color:cyan" i],
+[style*="color: #22d3ee" i], [style*="color:#22d3ee" i],
+[style*="color: #06b6d4" i], [style*="color:#06b6d4" i],
+[style*="color: #38bdf8" i], [style*="color:#38bdf8" i] { color: #ef4444 !important; }
+[class*="cyan"]:not([class*="bg"]):not([class*="background"]):not([class*="border"]):not([class*="line"]),
+[class*="blue"]:not([class*="bg"]):not([class*="background"]):not([class*="border"]):not([class*="line"]) { color: #ef4444 !important; }
+[style*="background"][style*="blue" i] [style*="color: white" i],
+[style*="background"][style*="cyan" i] [style*="color: white" i],
+[style*="background-color"][style*="blue" i] [style*="color: white" i],
+[style*="background-color"][style*="cyan" i] [style*="color: white" i] { color: #fcd34d !important; }
+.cesium-widget-credits, .cesium-credit-textContainer, .cesium-credit-logoContainer,
+.cesium-credit-expand-link, .cesium-credit-container, .cesium-widget-bottomContainer,
+.cesium-viewer-bottomContainer { display: none !important; visibility: hidden !important; opacity: 0 !important; }
+a[href*="cesium.com" i], a[href*="cesiumjs.org" i], a[href*="ion.cesium.com" i],
+img[alt*="cesium" i], img[src*="cesium" i] { display: none !important; visibility: hidden !important; }
+.sentinel-preset-active {
+  background: rgba(255, 176, 0, 0.25) !important;
+  border-color: rgba(255, 176, 0, 0.8) !important;
+  color: #fef3c7 !important;
+  box-shadow: 0 0 12px rgba(255, 176, 0, 0.5) !important;
+}
+@keyframes sentinel-trail {
+  0% { background-position: -100% 50%; opacity: 0; }
+  10% { opacity: 1; } 90% { opacity: 1; }
+  100% { background-position: 200% 50%; opacity: 0; }
+}
+#sentinel-tr3b { will-change: transform, left, top; }
+/* === SENTINEL THEME — amber/dark OSINT aesthetic === */
+:root {
+  --bg-dark: #0a0b0e !important;
+  --glass-bg: rgba(12, 10, 6, 0.78) !important;
+  --glass-border: rgba(255, 176, 0, 0.22) !important;
+  --accent: #ffb000 !important;
+  --accent-dim: rgba(255, 176, 0, 0.18) !important;
+  --accent-glow: rgba(255, 176, 0, 0.55) !important;
+  --text-primary: #fef3c7 !important;
+  --text-secondary: rgba(254, 243, 199, 0.55) !important;
+  --text-dim: rgba(254, 243, 199, 0.32) !important;
+  --cockpit-accent: #ffb000 !important;
+  --hud-color: rgba(255, 176, 0, 0.65) !important;
+  --hud-glow: rgba(255, 176, 0, 0.45) !important;
+  --hud-border: rgba(255, 176, 0, 0.18) !important;
+}
+body::before {
+  content: ""; position: fixed; inset: 0;
+  background-image: linear-gradient(rgba(255, 176, 0, 0.025) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 176, 0, 0.025) 1px, transparent 1px);
+  background-size: 32px 32px; pointer-events: none; z-index: 1;
+}
+#title-bar h1, #title-bar h1 span, #title-bar h1 *,
+.brand-logo, .title-accent, #title-bar .subtitle {
+  color: #fcd34d !important;
+  text-shadow: 0 0 8px rgba(255, 176, 0, 0.55) !important;
+  background: transparent !important;
+}
+#title-bar [style*="color: white" i], #title-bar [style*="color:white" i],
+#title-bar [class*="white"] { color: #fcd34d !important; }
+[style*="color: #00d4ff" i], [style*="color:#00d4ff" i],
+[style*="color: cyan" i], [style*="color:cyan" i],
+[style*="color: #22d3ee" i], [style*="color:#22d3ee" i],
+[style*="color: #06b6d4" i], [style*="color:#06b6d4" i] { color: #ef4444 !important; }
+.cesium-widget-credits, .cesium-credit-textContainer, .cesium-credit-logoContainer,
+.cesium-credit-expand-link, .cesium-credit-container, .cesium-widget-bottomContainer,
+.cesium-viewer-bottomContainer { display: none !important; visibility: hidden !important; }
+a[href*="cesium.com" i], a[href*="cesiumjs.org" i], img[alt*="cesium" i] {
+  display: none !important; visibility: hidden !important;
+}
