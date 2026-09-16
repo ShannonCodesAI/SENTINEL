@@ -12,7 +12,7 @@ A dark OSINT-style 3D globe dashboard with real-time data integration.(MIT Licen
 - Real-time traffic + incidents (TomTom)
 - Live satellites (Celestrak)
 - One-click layer presets (ENVIRONMENTAL / MOBILITY / ORBITAL / GROUND TRUTH)
-- Amber/dark military aesthetic with subtle grid overlay
+- Amber/dark aesthetic with subtle grid overlay
 - Floating preset bar (bottom-left) — one click loads 3 layers
 - RAM-optimized for 4GB machines (Cesium memory caps + WebGPU detection)
 
