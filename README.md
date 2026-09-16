@@ -1,6 +1,6 @@
 # SENTINEL // Multi-Sector Intelligence Console
 
-A dark OSINT-style 3D globe dashboard with real-time data integration. Built as a fork of [God's Eye View](https://github.com/bilawalsidhu/gods-eye-view) by [Bilawal Sidhu](https://github.com/bilawalsidhu) (MIT License).
+A dark OSINT-style 3D globe dashboard with real-time data integration.(MIT License).
 
 ## Features
 
