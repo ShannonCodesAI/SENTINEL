@@ -19,7 +19,7 @@ A dark OSINT-style 3D globe dashboard with real-time data integration.(MIT Licen
 ## Acknowledgements
 
 - Shout out to Bilawal Sidhu.
-- Z.ai — AI assistance + web search SDK for real-data integrations
+- Z.ai — Web search SDK for real-data integrations
 - Public data sources: OpenSky, USGS, NASA FIRMS, AISStream, TomTom, Cesium ion, Celestrak
 
 ## Setup
