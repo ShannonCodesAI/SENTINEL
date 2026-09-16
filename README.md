@@ -18,7 +18,7 @@ A dark OSINT-style 3D globe dashboard with real-time data integration.(MIT Licen
 
 ## Acknowledgements
 
-- God's Eye View by Bilawal Sidhu — https://github.com/bilawalsidhu/gods-eye-view (MIT License)
+- Shout out to Bilawal Sidhu — Creator of God's eye view
 - Z.ai — AI assistance + web search SDK for real-data integrations
 - Public data sources: OpenSky, USGS, NASA FIRMS, AISStream, TomTom, Cesium ion, Celestrak
 
