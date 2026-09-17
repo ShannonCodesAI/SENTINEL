@@ -1,6 +1,6 @@
 # SENTINEL // Multi-Sector Intelligence Console
 
-A dark OSINT-style 3D globe dashboard with real-time data integration. Built as a fork of [God's Eye View](https://github.com/bilawalsidhu/gods-eye-view) by [Bilawal Sidhu](https://github.com/bilawalsidhu) (MIT License).
+A dark OSINT-style 3D globe dashboard with real-time data integration.(MIT License).
 
 ## Features
 
@@ -12,14 +12,14 @@ A dark OSINT-style 3D globe dashboard with real-time data integration. Built as 
 - Real-time traffic + incidents (TomTom)
 - Live satellites (Celestrak)
 - One-click layer presets (ENVIRONMENTAL / MOBILITY / ORBITAL / GROUND TRUTH)
-- Amber/dark military aesthetic with subtle grid overlay
+- Amber/dark aesthetic with subtle grid overlay
 - Floating preset bar (bottom-left) — one click loads 3 layers
 - RAM-optimized for 4GB machines (Cesium memory caps + WebGPU detection)
 
 ## Acknowledgements
 
-- God's Eye View by Bilawal Sidhu — https://github.com/bilawalsidhu/gods-eye-view (MIT License)
-- Z.ai — AI assistance + web search SDK for real-data integrations
+- Shout out to Bilawal Sidhu.
+- Z.ai — Web search SDK for real-data integrations
 - Public data sources: OpenSky, USGS, NASA FIRMS, AISStream, TomTom, Cesium ion, Celestrak
 
 ## Setup
